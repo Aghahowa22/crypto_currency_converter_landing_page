@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>CryptoZ project</title>
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- navigation bar section -->
+        <header>
+            <nav class="nav_bar">
+                <div class="logo">
+
+                    <div class="log_image">
+                      <img src="/Images/nexo-(nexo).png" alt=""/>
+                    </div>
+
+                    <h4>Crypto<b style="color: #2752E7;">Z</b></h4> 
+                    <div class="menu">
+                       <i class='bx bx-menu' id="menu_btn" ></i>
+                    </div>  
+                    
+                   
+                </div>
+
+                <ul class="nav_link">   
+
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-briefcase'></i>
+                            <span class="nav_item">Product</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                           <i class='bx bx-money-withdraw'></i>
+                           <span class="nav_item">Price</span>
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                          <i class='bx bx-book-content'></i>
+                          <span class="nav_item">Learn</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                          <i class='bx bx-support'></i>
+                          <span class="nav_item">Support</span>
+                        </a>
+                    </li>
+
+                   
+                </ul>
+
+                <ul class="nav_link2">
+
+                    <div class="close">
+                      <i class='bx bx-x' id="close_btn"></i>
+                    </div>
+
+                        <li>
+                            <a href="#">
+                              <i class='bx bx-log-in'></i>
+                              <span class="nav_item"><b>Sign In</b></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="get_started_link" href="#">
+                                <i class='bx bxs-user'></i>
+                                <span class="nav_item">Get Started</span>
+                            </a>
+                        </li>
+
+                    
+                </ul>   
+                
+            </nav>
+
+        </header>
+
+
+        <!-- currency converter section -->
+
+        <section id="currency_converter">
+            
+            <div class="wrapper">
+                    
+                <div class="converter_text">
+                    <h1>Your all-in-one platform </h1>
+                    <h1>to buy,sell,trade and</h1>
+                    <h1>earn cryptocurrencies</h1>
+                    <p>Open a free account in minutes right from your<br> mobile phone and make your money go further</p>
+
+                    <div class="start_section">
+                        <input type="email" placeholder="Email Adress...." name="email" required />
+                        <a align="center" href="#">Get Started</a>
+                    </div>
+
+                </div>
+
+              
+
+                <div class="converter">
+                  <div class="btc_etherum_space">
+                    <div class="converter_btc_image">
+                        <img src="/Images/Cam1.png" alt="" />
+
+                    </div>
+
+                    <div  class="transparent_background">
+
+                            <h2 align="center">Currency Converter</h2>
+                            <div class="amount">
+                                <p>Amount</p>
+
+                                <div class="select_box_from">
+                                   <img src="https://flagcdn.com/h20/us.png" alt="flag" />
+                                    <select id="select1">
+                                       <!-- <option value="USD">USD</option> -->
+                                    </select>
+                                    <input id="input_amount" type="number" value="1" />
+
+                                </div>
+                            </div>
+
+
+                            <div class="converted_to">
+                                <p>converted to</p>
+
+                                <div class="select_box_to">
+                                   <img src="https://flagcdn.com/h20/gb.png" alt="flag" />
+                                    <select id="select2">
+                                        <!-- <option value="GBP">GBP</option> -->
+                                    </select>
+                                    <div id="converted_amount">Getting Exchange Rate.....</div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="date_time">
+                                <p>Date/Time</p>
+                                <div class="date_time_space">
+                                    <i class='bx bxs-calendar'></i>
+                                    <p id="day"></p>
+                                    <p id="month_date_year"></p>
+                                    <i class='bx bx-time'></i>
+                                    <p id="time"></p>
+
+                                </div>
+
+                            </div>  
+                            <p style="padding: 10px; color: #f2f2f2;">USD GBP BTC</p>
+
+                        </div>
+
+
+                    </div>
+                    <img src="/Images/Cam2.png" class="converter_etherum_image" alt="" />
+
+                    </div>
+                </div>  
+                   
+            </div>
+            
+        </section>
+
+
+ 
+        <!-- crypto currencies companies -->
+
+        <section id="crypto_companies_logo">
+           <p>Supported by</p>
+
+            <div class="companies_logo">
+                <img src="/Images/binance-exchange-seeklogo.svg" alt=""/>
+                <img src="/Images/coinbase-new-2021-seeklogo.svg" alt=""/>
+                <img src="/Images/bitcoin-seeklogo.svg" alt=""/>
+                <img src="/Images/tether-seeklogo.svg" alt=""/>
+                <img src="/Images/bitmex-seeklogo.svg" alt=""/>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- people joined section -->
+
+
+        <section>
+            <div class="people_joined_users">
+                <div class="cover_people_joined">
+                    <div class="people_joined">
+                       <h2>99K</h2>
+                       <p>People have joined</p>
+                    </div>
+                    <div id="middle" class="people_joined">
+                        <h2>50K+</h2>
+                        <p>VVIP users have joined</p>
+                    </div>
+
+                    <div class="people_joined">
+                        <h2>100+</h2>
+                        <p>Big companies have joined</p>
+                    </div>
+                </div>
+           </div>
+
+        </section>
+
+
+
+
+        <!-- The most trusted cryptocurrency platform -->
+
+        <section id="trusted">
+
+
+            <div class="main_cover">
+                <div class="cover_most_trust_crypto">
+                    <h1>The Most Trusted</h1>
+                    <h1>CryptoCurrency</h1>
+                    <h1>Platform.</h1>
+
+                    <div class="space_01">
+                        <h2>01</h2>
+                        <div class="text_01">
+                          <h3>Sync between platforms</h3>
+                           <p>No matter if you are using our web interface or<br>mobile app - your data is always synced.just<br>one account for all our services</p>
+                        </div>
+                    </div>
+
+                    <div class="space_02">
+                       <h2>02</h2>
+                        <div class="text_02">
+                          <h3>More focus and less clutter</h3>
+                          <p>No adds, just crypto and content you love</p>
+                        </div>
+                    </div>
+
+                    <div class="space_03">
+                       <h2>03</h2>
+                        <div class="text_03">
+                          <h3>Security by default</h3>
+                          <p>Enable privacy mode and app locking to protect your data</p>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="trusted_image">
+                  <img src="/Images/IMG_4435.PNG" alt="" />
+
+                </div>   
+            </div>
+
+        </section>
+
+
+
+
+        <section id="relative">
+            <div class="color_background">
+                <div class="main_wrapper">
+
+                    <div class="first_side">
+
+                        <div class="trade_image_box1">
+                            <img src="/Images/Group 8749.png" alt=""/>
+                        </div>
+                        <div class="create_portfolio1">
+                            <h1 align="center">Create portfolio today</h1>
+                            <p align="center">Buy and sell popular digittal currencies,keep track of them <br>in the one place.Has a variety of featured that make it the best place to start trading </p>
+                        </div>
+
+                    </div>
+
+                    <div class="second_and_third_side">
+
+                        <div class="second_side">
+
+                            <div class="trade_image_box2">
+                                <img src="/Images/Group 8748.png" alt="" />
+                            </div>
+                            <div class="create_portfolio2">
+                               <h1 align="center">Lightning-Fast Crypto Trading</h1>
+                               <p align="center">The Exchange supports USD, EUR, and GBP <br>Invest in cryptocurrencies slowly over time by<br>Scheduling buys daily, weeky or monthly.</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="third_side">
+
+                            <div class="trade_image_box3">
+                                <img src="/Images/Group 8747.png" alt=""/>
+                            </div>
+                            <div class="create_portfolio3">
+                               <h1 align="center">Security from day one</h1>
+                               <p align="center">Safety,security and complaince. Buy and sell<br> popular digital currencies.keep track of them<br> in one place.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <section>
+                    <div class="started_in_minutes">
+                       <h1>Get Started in just </h1>
+                       <h1>few minutes</h1>
+                       <p align="center">Has a variety of features that makes it the best place to start trading</p>
+                    </div>
+
+                    <div class="sign_up_fund_buy_crypto">
+                        <div class="sign_up">
+                            <img src="/Images/Frame 219.png" alt="" />
+                            <h1>Sign Up</h1>
+                            <p align="center">Bitcoin or Ethereum,we securely store<br> it in your wallet or send it easily to you friend</p>
+                        </div>
+
+                        <div class="fund">
+                            <img src="/Images/Frame 220.png" alt="" />
+                            <h1>Fund</h1>
+                            <p align="center">Choose you prefered payment method<br> such as bank transfer or credit card to top<br> up your wallet</p>
+                        </div>
+
+                        <div class="buy_crypto">
+                            <img src="/Images/Frame 221.png" alt="" />
+                            <h1>Buy Crypto</h1>
+                            <p align="center">Sign up for free wallet on web,IOS or<br> Android and follow our easy process to set<br> up your profile</p>
+                        </div>
+                    </div>
+                </section>
+
+                
+            </div>
+        </section>
+
+      <!-- What people are saying -->
+        <section id="what_people_say">
+            <h1>What people are saying</h1>
+
+            <div class="main_wrap">
+                <div class="the_wrapper">
+                    <div class="wrap1">
+                        <div class="area1">
+ 
+                            <div class="profile">
+                               <img src="/Images/pexels-photo-2379005.jpeg" alt="" />
+                               <h4 >John Doe</h4>
+                               <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+
+                            <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+
+
+                        <div class="area1">
+ 
+                            <div class="profile">
+                                <img src="/Images/57649b77-c748-4114-ae72-693bbff1f455.jpeg" alt="" />
+                                <h4 >Jack Alvin</h4>
+                                <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+
+                            <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+
+
+                        <div class="area1">
+ 
+                            <div class="profile">
+                                <img src="/Images/girl6.jpeg" alt="" />
+                                <h4 >Stephanie Aron</h4>
+                                <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+
+                            <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+
+                    </div>
+                    <!--first one  -->
+
+                    <div class="wrap2">
+
+                        <div class="area1">
+ 
+                            <div class="profile">
+                                <img src="/Images/girl1.jpeg" alt="" />
+                                <h4 >Mary Cook</h4>
+                                <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+
+                            <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+
+
+                        <div class="area1">
+ 
+                            <div class="profile">
+                                <img src="/Images/girl2.jpeg" alt="" />
+                                <h4 >Caroline Smith</h4>
+                                <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+
+                            <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+
+
+                        <div class="area1">
+ 
+                            <div class="profile">
+                                <img src="/Images/girl4.jpeg" alt="" />
+                                <h4 >Susan Jakes</h4>
+                                <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+
+                            <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+
+                    </div>
+                 <!-- second one -->
+ 
+                    <div class="wrap3">
+
+                        <div class="area1">
+ 
+                            <div class="profile">
+                                <img src="/Images/WhatsApp Image 2024-02-02 at 14.29.22.jpeg" alt="" />
+                                <h4 >John Fletcher</h4>
+                                <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+ 
+                            <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+
+
+                        <div class="area1">
+ 
+                            <div class="profile">
+                                <img src="/Images/WhatsApp Image 2024-02-08 at 08.36.17 (1).jpeg" alt="" />
+                                <h4 >Harry potter</h4>
+                                <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+
+                           <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+
+
+                        <div class="area1">
+ 
+                            <div class="profile">
+                                <img src="/Images/WhatsApp Image 2024-04-18 at 11.57.12.jpeg" alt="" />
+                                <h4 >Joseph Andrew</h4>
+                                <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+
+                            <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+                    </div>
+                    <!-- third one -->
+
+                    <div class="wrap4">
+
+
+                        <div class="area1">
+ 
+                            <div class="profile">
+                                <img src="/Images/WhatsApp Image 2024-06-10 at 17.16.01.jpeg" alt="" />
+                                <h4 >Mark Timothy</h4>
+                                <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+
+                            <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+
+
+                        <div class="area1">
+ 
+                            <div class="profile">
+                                <img src="Images/a3be1863-6d71-4dbf-84da-5814cb6661dc.jpeg" alt="" />
+                                <h4 >Lookman James</h4>
+                                <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+
+                            <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+
+
+                        <div class="area1">
+ 
+                            <div class="profile">
+                                <img src="/Images/girl3.webp" alt="" />
+                                <h4 >Zoe Donald</h4>
+                                <h4 style="color: #ccc; font-size: 12px;">CEO Motion Design Agency</h4>
+                            
+                            </div>
+
+                            <p align="center">Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+
+        <section>
+            <div class="coverage">
+                <div class="first_step">
+                    <h1>Take your first step into, safe secure crypto investing</h1>
+                    <a align="center" href="#">Get Started</a>
+                </div>
+                <div class="crypto_image">
+                    <img id="btc_currency" src="/Images/btc.png" alt="" />
+                    <img id="btc_currency" src="/Images/eth.png" alt="" />
+                    <img id="btc_currency" src="/Images/luna.png" alt="" />
+
+                </div>
+            </div>
+        </section>
+
+       <!-- Footer Spaces -->
+
+        <footer>
+
+         
+            <div class="footer_space">
+
+                <div class="footer_cover1">
+
+                    
+
+                        <div class="company">
+
+                           <h3>Company</h3>
+
+                           <p>About Us</p>
+                           <p>Blog</p>
+                           <p>Security</p>
+                           <p>Careers</p>
+                           <p>Student</p>
+                           <p>Trust And Safety</p>
+                           <p>Newsroom</p>
+                           <p>Videos</p>
+
+                        </div>
+
+                        <div class="learn">
+
+                           <h3>Learn</h3>
+
+                           <p>What's Trending</p>
+                           <p>Product News</p>
+                           <p>Events</p>
+                           <p>University</p>
+                           <p>Research</p>
+                           <p>Market Updates</p>
+
+
+                        </div>
+
+                        <div class="product">
+                            <h3>products</h3>
+
+                            <p>Stock & Fund</p>
+                            <p>Cash Card</p>
+                            <p>Crypto</p>
+                            <p>Options</p>
+                            <p>Gold</p>
+                            <p>Learn Snacks</p>
+
+
+                        </div>
+
+                        <div class="supportive">
+                           <h3>Support</h3>
+
+                           <p>Support Center</p>
+                           <p>Contact Us</p>
+                           <p>System Status</p>
+                           <p>Areas Available</p>
+
+
+                        </div>
+
+                        <div class="resource">
+                           <h3>Resourse</h3>
+
+                            <p>Prices</p>
+                            <p>Site Widgets</p>
+                            <p>Tax</p>
+                            <p>Support</p>
+
+
+                        </div>
+                   
+                   
+                </div>
+                <hr>
+                <div class="footer_cover2">
+                    <h1 align="center">Do you know you can do more with Crypto while on the go?</h1>
+                    <div class="crypto_logo">
+                        <img src="/Images/nexo-(nexo).png" alt="" />
+                        <h1>CryptoZ</h1>
+                    </div>
+                    <p> &copy; Design by Aghahowa Edosa. All rights reserved.</p>
+
+                </div>
+
+            </div>
+        </footer>
+
+
+
+
+    
+       
+
+
+       
+         
+    </div>
+    <script src="countries.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
